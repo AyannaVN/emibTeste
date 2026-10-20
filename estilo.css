@@ -1314,8 +1314,8 @@ p:not(.eyebrow):not(.role):not(.social-panel-title):not(.video-note){
   z-index: 1;
 }
 
-#metodologia {
+
+section:has(.section-head .eyebrow) {
   position: relative;
   z-index: 1;
-  background-color: #fff;
 }
