@@ -1287,28 +1287,29 @@ p:not(.eyebrow):not(.role):not(.social-panel-title):not(.video-note){
 
 
 
-#home {
+
+.video-intro {
   position: relative;
   width: 100%;
   height: 800px;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  background: transparent;
 }
 
-#video-fundo {
+#video-home {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 0;
+  object-fit: cover;
+  object-position: center center;
   pointer-events: none;
+  z-index: -1;
 }
 
-#video-home {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.hero {
+  position: relative;
+  z-index: 1;
 }
